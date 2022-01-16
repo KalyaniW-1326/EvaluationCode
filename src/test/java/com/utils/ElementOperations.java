@@ -5,8 +5,11 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.evaluation.base.BaseTest;
 
@@ -72,7 +75,6 @@ public class ElementOperations {
 	public static void switchToFrame(String identifierType,String frame) {
 		try {
 			WebElement iFrame=getWebElement(identifierType,frame);
-			System.out.println(iFrame);
 			if (IsFramePresent()==true) {
 				BaseTest.driver.switchTo().frame(iFrame);
 			}
@@ -95,5 +97,10 @@ public class ElementOperations {
 		return frames.size() > 0;
 	}
 	
+	public static void waitForElementToBeClickable(String element) {
+	    WebDriverWait wait = new WebDriverWait(BaseTest.driver, 30);
+	    wait.until(ExpectedConditions.elementToBeClickable(By.xpath(element)));
+	}
+ 
 
 }

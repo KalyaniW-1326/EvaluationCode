@@ -18,4 +18,4 @@ public interface IRestAPIResponse<T> {
 	public Exception getException();
 }
 
-}
+

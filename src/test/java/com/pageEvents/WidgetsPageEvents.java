@@ -1,5 +1,7 @@
 package com.pageEvents;
 
+import java.util.concurrent.TimeUnit;
+
 import com.evaluation.base.BaseTest;
 import com.pageObjects.InteractionElements;
 import com.pageObjects.WidgetsElements;
@@ -11,7 +13,7 @@ public class WidgetsPageEvents {
 		BaseTest.logger.info("Control clicked");
 	}
 	
-	public void selectAndBook() {
+	public void selectElements() {
 		try {
 		ElementOperations.scrollInMiddle();
 		ElementOperations.switchToFrame("TAGNAME", InteractionElements.frame);
@@ -19,13 +21,16 @@ public class WidgetsPageEvents {
 		ElementOperations.getWebElement("XPATH", WidgetsElements.Automatic).click();
 		ElementOperations.getWebElement("XPATH", WidgetsElements.Insurance).click();
 		ElementOperations.getWebElement("XPATH", WidgetsElements.AutomaticVertical).click();
-		ElementOperations.getWebElement("XPATH", WidgetsElements.InsuranceVertical).click();
-		ElementOperations.getWebElement("ID", WidgetsElements.BookNow).click();
-		BaseTest.logger.info("selectAndBook Operation Performed");
+		ElementOperations.waitForElementToBeClickable(WidgetsElements.InsuranceVertical);
+		ElementOperations.getWebElement("XPATH", WidgetsElements.InsuranceVertical).click();		
 		}catch(Exception e) {
 			System.out.println("In selectAndBook class" +e);
 		}
 		
 	}
-
+	public void bookNow() {
+		ElementOperations.getWebElement("ID", WidgetsElements.BookNow).click();
+		BaseTest.logger.info("selectAndBook Operation Performed");
+		
+	}
 }

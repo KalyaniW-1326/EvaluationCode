@@ -8,7 +8,7 @@
   <test name="Test Automation">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="com.evaluation.testCases.WebAutomation_Case2"/>
+      <class name="com.evaluation.testCases.WebAutomation_Case3"/>
     </classes>
   </test> <!-- Test Automation -->
 </suite> <!-- Failed suite [Sample Test Suite] -->

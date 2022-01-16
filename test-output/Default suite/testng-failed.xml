@@ -3,7 +3,17 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="com.api.test.TC_001_Get"/>
+      <class name="com.evaluation.testCases.WebAutomation_Case3"/>
     </classes>
   </test> <!-- Default test -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.evaluation.testCases.WebAutomation_Case3">
+        <methods>
+          <include name="performBookOperation"/>
+          <include name="beforeTestMethod"/>
+        </methods>
+      </class> <!-- com.evaluation.testCases.WebAutomation_Case3 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

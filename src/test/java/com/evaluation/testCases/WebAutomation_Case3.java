@@ -10,7 +10,8 @@ public class WebAutomation_Case3 extends BaseTest{
 	public void performBookOperation() {
 		WidgetsPageEvents widgetPageEvents = new WidgetsPageEvents();
 		widgetPageEvents.clickOnControlGroup();
-		widgetPageEvents.selectAndBook();
+		widgetPageEvents.selectElements();
+		widgetPageEvents.bookNow();
 	}
 
 }

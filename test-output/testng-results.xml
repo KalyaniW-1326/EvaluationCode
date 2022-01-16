@@ -2,16 +2,51 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-16T13:54:08Z" name="Default suite" finished-at="2022-01-16T13:54:24Z" duration-ms="16079">
+  <suite started-at="2022-01-16T17:39:05Z" name="Sample Test Suite" finished-at="2022-01-16T17:39:15Z" duration-ms="10618">
     <groups>
     </groups>
-    <test started-at="2022-01-16T13:54:08Z" name="Default test" finished-at="2022-01-16T13:54:24Z" duration-ms="16079">
-      <class name="com.api.test.TC_001_Get">
-        <test-method signature="verifyName()[pri:0, instance:com.api.test.TC_001_Get@46b61c56]" started-at="2022-01-16T19:24:08Z" name="verifyName" finished-at="2022-01-16T19:24:24Z" duration-ms="16062" status="PASS">
+    <test started-at="2022-01-16T17:39:05Z" name="Test Automation" finished-at="2022-01-16T17:39:15Z" duration-ms="10618">
+      <class name="com.evaluation.testCases.WebAutomation_Case3">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:com.evaluation.testCases.WebAutomation_Case3@7690781]" started-at="2022-01-16T23:09:05Z" name="beforeTestMethod" finished-at="2022-01-16T23:09:05Z" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyName -->
-      </class> <!-- com.api.test.TC_001_Get -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- beforeTestMethod -->
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.evaluation.testCases.WebAutomation_Case3@7690781]" started-at="2022-01-16T23:09:05Z" name="beforeMethodMethod" finished-at="2022-01-16T23:09:12Z" duration-ms="6639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.evaluation.testCases.WebAutomation_Case3.performBookOperation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodMethod -->
+        <test-method signature="performBookOperation()[pri:0, instance:com.evaluation.testCases.WebAutomation_Case3@7690781]" started-at="2022-01-16T23:09:12Z" name="performBookOperation" finished-at="2022-01-16T23:09:15Z" duration-ms="3147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performBookOperation -->
+        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.evaluation.testCases.WebAutomation_Case3@7690781]" started-at="2022-01-16T23:09:15Z" name="afterMethodMethod" finished-at="2022-01-16T23:09:15Z" duration-ms="231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=performBookOperation status=SUCCESS method=WebAutomation_Case3.performBookOperation()[pri:0, instance:com.evaluation.testCases.WebAutomation_Case3@7690781] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodMethod -->
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.evaluation.testCases.WebAutomation_Case3@7690781]" started-at="2022-01-16T23:09:15Z" name="afterTestMethod" finished-at="2022-01-16T23:09:15Z" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+      </class> <!-- com.evaluation.testCases.WebAutomation_Case3 -->
+    </test> <!-- Test Automation -->
+  </suite> <!-- Sample Test Suite -->
 </testng-results>
