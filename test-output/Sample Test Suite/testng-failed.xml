@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sample Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="chrome"/>
+  <listeners>
+    <listener class-name="com.utils.SuiteListener"/>
+  </listeners>
+  <test name="Test Automation">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.evaluation.testCases.WebAutomation_Case2"/>
+    </classes>
+  </test> <!-- Test Automation -->
+</suite> <!-- Failed suite [Sample Test Suite] -->
